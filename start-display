@@ -1,0 +1,4 @@
+#!/bin/bash
+PS1="\u@\h:\w\$ "
+echo -ne "\033]0;DISPLAY\007"
+tmux attach-session -t =$1
